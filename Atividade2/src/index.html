@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>CoffeShop - Pagina inicial</title>
+        <meta name="author" content="William Wollert">
+        <meta name="description" content="Atividade 2, desenvolvimento mobile, grid css e manifest.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#2563eb">
+        <link rel="icon" href="../public/icons/graos-de-cafe (1).png" sizes="192x192">
+        <link rel="stylesheet" href="styles/layout.css">
+        <link rel="manifest" href="scripts/service_worker.js">
+    </head>
+    <body>
+
+        <header id="topo">
+        <div class="branding">
+            <a href="#" aria-label="Página inicial">
+            <img src="../public/icons/graos-de-cafe (2).png" alt="Logo da Empresa XYZ" />
+            </a>
+        </div>
+
+        <button class="nav-toggle"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+            <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+            </svg>
+        </button>
+
+        <nav id="menu" class="offcanvas" aria-label="Menu" aria-hidden="true">
+            <div class="offcanvas-header">
+            <h2 id="menu-title">Menu</h2>
+            <button class="nav-close" aria-label="Fechar menu">
+                <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 6l12 12M18 6l-12 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+            </button>
+            </div>
+            <ul>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <div class="backdrop" data-close-menu hidden></div>
+
+        <main id="conteudo" tabindex="-1">
+            <section id="banner" aria-label="Banner principal">
+                <figure>
+                    <img src="../public/images/banner_5.webp" alt="Banner principal site">
+                </figure>
+            </section>
+
+            <section id="catalogo" aria-labelledby="titulo-catalogo">
+                <h2 id="titulo-catalogo">Catálogo</h2>
+                <ul>
+                    <li>
+                        <article class="card-produto">
+                            <a href="#">
+                                <figure>
+                                    <img src="../public/images/premium.png" alt="Imagem produto 1">
+                                    <figcaption class="sr-only">Produto 1</figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card-produto">
+                            <a href="#">
+                                <figure>
+                                    <img src="../public/images/tradicional-extraforte.png" alt="Imagem produto 2">
+                                    <figcaption class="sr-only">Produto 2</figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card-produto">
+                            <a href="#">
+                                <figure>
+                                    <img src="../public/images/filtros.png" alt="Imagem produto 3">
+                                    <figcaption class="sr-only">Produto 3</figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card-produto">
+                            <a href="#">
+                                <figure>
+                                    <img src="../public/images/soluvel.png" alt="Imagem produto 4">
+                                    <figcaption class="sr-only">Produto 4</figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card-produto">
+                            <a href="#">
+                                <figure>
+                                    <img src="../public/images/saborchocolatemelita.png" alt="Imagem produto 5">
+                                    <figcaption class="sr-only">Produto 5</figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card-produto">
+                            <a href="#">
+                                <figure>
+                                    <img src="../public/images/cafecomleitemelita.png" alt="Imagem produto 6">
+                                    <figcaption class="sr-only">Produto 6</figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card-produto">
+                            <a href="#">
+                                <figure>
+                                    <img src="../public/images/avelamelita.png" alt="Imagem produto 7">
+                                    <figcaption class="sr-only">Produto 7</figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card-produto">
+                            <a href="#">
+                                <figure>
+                                    <img src="../public/images/MLT-11007624--choc-tocha-humana-.png" alt="Imagem produto 8">
+                                    <figcaption class="sr-only">Produto 8</figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <section id="sobre" aria-labelledby="titulo-sobre">
+                <h2 id="titulo-catalogo" class="sr-only">Sobre</h2>
+                <p>Somos novidade no mercado! Agradeçemos sua visita, nos siga no Instragram para mais novidades e promoções!</p>
+            </section>
+        </main>
+
+        <footer id="contato" aria-labelledby="titulo-contato">
+            <h2 id="titulo-contato" class="sr-only">Contato</h2>
+            <address>
+                <strong>BR-CoffeShop</strong><br />
+                Rio do Sul - SC<br />
+                CNPJ: 00.000.000/0000-00<br />
+                <a href="tel:+554799999999">(47) 99999-9999</a>
+            </address>
+            <ul aria-label="Redes sociais">
+                <li><a href="#">Instragram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
+        </footer>    
+        <script defer src="scripts/menu.js"></script> 
+    </body>
+</html>
