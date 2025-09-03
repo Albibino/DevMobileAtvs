@@ -6,8 +6,8 @@ const CORE_ASSETS = [
   './scripts/menu.js',
   './manifest.webmanifest',
   '../public/images/banner_5.webp',
-  '../public/icons/icon-192.png',
-  '../public/icons/icon-512.png'
+  '../public/icons/icon-24.png',
+  '../public/icons/icon-32.png'
 ];
 
 self.addEventListener('install', (event) => {
