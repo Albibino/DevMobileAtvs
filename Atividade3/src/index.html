@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DevStickers — Pagina inicial</title>
+  <meta name="description" content="Stickers4Life.">
+  <meta name="theme-color" content="#0ea5e9">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="/src/icons/logo-stickers-cartoon-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/src/icons/logo-stickers-cartoon-192x192.png">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <div class="overlay" data-overlay></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <button class="icon-btn hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-drawer" data-open-drawer>
+        <span></span><span></span><span></span>
+      </button>
+
+      <a class="brand" href="#"><img src="icons/logo-stickers-cartoon-192x192.png" alt="" class="brand-mark"> <span>DevStickers</span></a>
+
+      <nav class="main-nav">
+        <a href="#home">Início</a>
+        <a href="#novidades">Novidades</a>
+        <a href="#colecoes">Coleções</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn ghost" aria-label="Abrir carrinho">🛒 <span class="cart-count" data-cart-count>0</span></button>
+      </div>
+    </div>
+
+    <aside id="mobile-drawer" class="drawer" aria-hidden="true">
+      <div class="drawer-header">
+        <strong>Menu</strong>
+        <button class="icon-btn close" aria-label="Fechar menu" data-close-drawer>&times;</button>
+      </div>
+      <nav class="drawer-nav">
+        <a href="#home" data-close-drawer>Início</a>
+        <a href="#novidades" data-close-drawer>Novidades</a>
+        <a href="#colecoes" data-close-drawer>Coleções</a>
+        <a href="#contato" data-close-drawer>Contato</a>
+      </nav>
+    </aside>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Stickers que combinam com seu dev interior ✨</h1>
+          <p>Monte seu setup, notebook ou garrafa com figurinhas resistentes à água e super coloridas.</p>
+          <a href="#novidades" class="btn primary">Ver novidades</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="novidades" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Novidades</h2>
+          <p>Chegaram coleções novinhas, feitas com amor e criatividade.</p>
+        </header>
+        
+        <div class="product-list" id="produtos" role="list">
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="colecoes" class="section alt">
+      <div class="container">
+        <header class="section-head">
+          <h2>Coleções</h2>
+          <p>Explore temas como tech, pets, retrô, minimalista e muito mais.</p>
+        </header>
+
+        <div class="collections">
+          <a href="#" class="chip">Tech</a>
+          <a href="#" class="chip">Pets</a>
+          <a href="#" class="chip">Retrô</a>
+          <a href="#" class="chip">Minimal</a>
+          <a href="#" class="chip">Nature</a>
+          <a href="#" class="chip">Memes</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Contato</h2>
+          <p>Dúvidas? Fale com a gente por <a href="#">e‑mail</a>.</p>
+        </header>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Mensagem enviada! (demo)');">
+          <div class="form-row">
+            <label>Nome
+              <input type="text" required placeholder="Seu nome">
+            </label>
+            <label>E‑mail
+              <input type="email" required placeholder="email@exemplo.com">
+            </label>
+          </div>
+          <label>Mensagem
+            <textarea rows="4" required placeholder="Como podemos ajudar?"></textarea>
+          </label>
+          <button class="btn primary" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>&copy; <span id="year"></span> DevStickers — Todos os direitos reservados.</small>
+      <a class="a11y" href="#home">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="./scripts/script.js" defer></script>
+</body>
+</html>
